@@ -796,6 +796,43 @@
     border: 1px dashed var(--border); margin-top: 4px;
   }
 
+
+  /* ── ATTACHMENTS ── */
+  .attachments-section {
+    margin-top: 20px; width: 100%;
+    padding: 0 16px 20px;
+  }
+  .attachments-title {
+    font-size: 11px; font-weight: 600; letter-spacing: 2px;
+    text-transform: uppercase; color: rgba(255,255,255,0.5);
+    text-align: center; margin-bottom: 12px;
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+  }
+  .attachments-title::before, .attachments-title::after {
+    content: ''; flex: 1; height: 1px;
+    background: rgba(255,255,255,0.2);
+  }
+  .attachment-item {
+    background: rgba(255,255,255,0.12);
+    border-radius: 12px; padding: 11px 14px;
+    margin-bottom: 8px;
+    border: 1px solid rgba(255,255,255,0.15);
+    display: flex; align-items: center; gap: 12px;
+  }
+  .attachment-icon {
+    width: 36px; height: 36px; border-radius: 10px;
+    background: rgba(201,99,122,0.35);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 16px; flex-shrink: 0;
+  }
+  .attachment-info { flex: 1; }
+  .attachment-name {
+    font-size: 13px; font-weight: 600; color: white; margin-bottom: 2px;
+  }
+  .attachment-addr {
+    font-size: 11px; color: rgba(255,255,255,0.6); line-height: 1.4;
+  }
+
   /* ── SPECIALIST TITLE ── */
   .avatar-specialist {
     font-size: 12px; color: rgba(255,255,255,0.82);
@@ -949,6 +986,26 @@
           <div class="opd-address">Nr. Sakinaka Telephone Exchange, Sakinaka</div>
           <div class="opd-time">📅 Mon &amp; Fri — By Appointment</div>
         </div>
+      <!-- Attachments -->
+      <div class="attachments-section">
+        <div class="attachments-title">Attachments</div>
+
+        <div class="attachment-item">
+          <div class="attachment-icon">🏨</div>
+          <div class="attachment-info">
+            <div class="attachment-name">Nanavati Max Super Speciality Hospital</div>
+            <div class="attachment-addr">SV Road, Vile Parle West</div>
+          </div>
+        </div>
+
+        <div class="attachment-item">
+          <div class="attachment-icon">🏥</div>
+          <div class="attachment-info">
+            <div class="attachment-name">CritiCare Asia Multispeciality Hospital</div>
+            <div class="attachment-addr">Kurla West</div>
+          </div>
+        </div>
+      </div>
       </div>
     </div>
     <div class="about-content">
@@ -1018,7 +1075,7 @@
       <h2 class="section-title">Ask Me <em>Anything</em></h2>
       <p class="section-sub">
         No judgment. No awkward silences. Submit your question and I'll answer it —
-        on Instagram, in a story, or privately via email if you leave one.
+        on Instagram, in a story, or privately.
       </p>
     </div>
 
